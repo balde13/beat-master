@@ -1,0 +1,26 @@
+------------------------------------
+R2 installation for Ubuntu 16.04 LTS
+------------------------------------
+git clone https://github.com/radare/radare2.git
+cd radare2/sys
+./install.sh
+
+------------------------------------
+Install R2 Python 3 Bindings
+------------------------------------
+r2pm init
+r2pm update
+r2pm install lang-python3
+sudo apt install python3-pip
+sudo pip3 install r2pipe
+
+------------------------------------
+Install pyqt5 for python3
+------------------------------------
+sudo apt-get install python3-pyqt5
+
+------------------------------------
+Install MongoDB and Python 3 Bindings
+------------------------------------
+sudo apt-get install mongodb
+pip3 install pymongo
